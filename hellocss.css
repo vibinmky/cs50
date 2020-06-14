@@ -1,0 +1,21 @@
+h1 {
+  text-align: center;
+  border: 5px solid black;
+  background-color: aqua;
+  width: 500px;
+  margin-left: 500px;
+}
+
+table {
+  border-color: black;
+  border: 2px solid blue;
+  padding: 5px;
+  border-collapse: collapse;
+  margin-left: 600px;
+  font-size: 30px;
+}
+
+td,
+th {
+  border: 1px solid blue;
+}
