@@ -1,9 +1,11 @@
-h1 {
+h1,
+h2 {
   text-align: center;
   border: 5px solid black;
   background-color: aqua;
   width: 500px;
-  margin-left: 500px;
+  position: relative;
+  margin: auto;
 }
 
 table {
@@ -12,10 +14,77 @@ table {
   padding: 5px;
   border-collapse: collapse;
   font-size: 30px;
-  align-self: center;
+  position: relative;
+  margin: auto;
 }
-
+/* Multiple Element Selector */
 td,
 th {
   border: 1px solid blue;
+}
+
+/* Child Selector */
+ol > li {
+  color: maroon;
+  font-size: 30px;
+}
+/* ol li =>Descendant selector */
+/* a+b adjacent sibling selector */
+
+/* Attribute selector */
+input[type="text"] {
+  background-color: aqua;
+}
+
+input[type="password"] {
+  background-color: darkmagenta;
+}
+
+/* Pseudoclass Selector */
+button:hover {
+  background-color: fuchsia;
+}
+
+/* Pseudoelement Selector */
+a::before {
+  content: "For more information ";
+}
+
+#ptag::selection {
+  background-color: yellow;
+  color: red;
+}
+
+p {
+  font-size: 30px;
+}
+
+@media print {
+  #printHide {
+    display: none;
+  }
+}
+
+@media (min-width: 600px) {
+  h1::before {
+    content: "Welcome to first Details Table!";
+  }
+}
+
+@media (max-width: 599px) {
+  h1::before {
+    content: "Welcome!";
+  }
+}
+
+.flexDiv {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flexExample {
+  border: 2px solid black;
+  width: 200px;
+  margin: 20px;
+  padding: 10px;
 }
